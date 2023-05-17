@@ -20,6 +20,7 @@ using namespace std;
             {
                 cout << "Triângulo é Equilátero";
             }
+            //(ladoA == ladoB || ladoB == ladoC || ladoC == ladoA)
             else if (ladoA == ladoB && ladoA != ladoC || ladoA == ladoC && ladoB != ladoA || ladoB == ladoC && ladoA != ladoC )
             {
                 cout << "Triângulo é Iśosceles";
