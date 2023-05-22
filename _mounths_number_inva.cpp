@@ -6,7 +6,7 @@ using namespace std;
         bool invalido;
         int mes;
         setlocale(LC_ALL, "ptb");
-        invalido = false;
+        
         cout << "Escreva o número de um mês  (1 a 12) \n";
         cin >> mes;
             if (mes == 1)
