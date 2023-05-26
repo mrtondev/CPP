@@ -1,5 +1,6 @@
 #include <iostream>
 #include <locale>
+#include <iomanip>
 using namespace std;
 
 string resp;
@@ -8,6 +9,7 @@ int qtd,cod_p,qH, qC, qM, qP, qCH;
 
 int main()
 {
+    cout << fixed << setprecision(2);
     setlocale(LC_ALL, "ptb");
     cout << "*** Cardápio ***" << endl;
     ;
