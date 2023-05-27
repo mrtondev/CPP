@@ -8,9 +8,7 @@ int main()
 
     int numA, numB, res;
     char mat;
-    bool des;
 
-    des == true;
     cout << "--- Bem-vindo   ---" << endl;
     cout << "---     à       ---" << endl;
     cout << "--- Calculadora ---" << endl;
