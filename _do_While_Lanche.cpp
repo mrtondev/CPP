@@ -37,7 +37,7 @@ int main()
             cout << "Hambúrguer:" << endl;
             cout << "Quantidade:";
             cin >> qtd;
-            qH = qtd;
+            qH += qtd;
             val_total = qtd * 5.50;
             cout << "Adicionado: R$ " << val_total << endl;
             break;
@@ -45,7 +45,7 @@ int main()
             cout << "Cachorro-quente:" << endl;
             cout << "Quantidade:";
             cin >> qtd;
-            qC = qtd;
+            qC += qtd;
             val_total = qtd * 4.50;
             cout << "Adicionado: R$ " << val_total << endl;
             break;
@@ -53,7 +53,7 @@ int main()
             cout << "Milk-shake:" << endl;
             cout << "Quantidade:";
             cin >> qtd;
-            qM = qtd;
+            qM += qtd;
             val_total = qtd * 7.00;
             cout << "Adicionado: R$ " << val_total << endl;
             break;
@@ -61,7 +61,7 @@ int main()
             cout << "Pizza brotinho:" << endl;
             cout << "Quantidade:";
             cin >> qtd;
-            qP = qtd;
+            qP += qtd;
             val_total = qtd * 8;
             cout << "Adicionado: R$ " << val_total << endl;
             break;
@@ -70,7 +70,7 @@ int main()
                  << " R$" << endl;
             cout << "Quantidade:";
             cin >> qtd;
-            qCH = qtd;
+            qCH += qtd;
             val_total = qtd * 8.50;
             cout << "Adicionado: R$ " << val_total << endl;
             break;
