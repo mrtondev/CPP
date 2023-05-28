@@ -12,7 +12,6 @@ int main()
     cout << fixed << setprecision(2);
     setlocale(LC_ALL, "ptb");
     cout << "*** Cardápio ***" << endl;
-    ;
     cout << endl;
     cout << "100 – Hambúrguer – R$5,50" << endl;
     cout << endl;
