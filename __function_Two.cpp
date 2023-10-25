@@ -31,11 +31,25 @@ int main(){
     cout << ("|____________________________________________________|\n");
     cout << ("\n");
 
+    cin >> resp;
 
+    switch (resp)
+    {
+    case 0:{
+        cout << (menu());
+    
+        break;
+    }
+    case 100:{
+        
+    }
+    default:
+        break;
+    }
 
     return 0;
 
-
+    
 
 
 }
