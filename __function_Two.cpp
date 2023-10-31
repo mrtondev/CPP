@@ -2,7 +2,7 @@
 #include <locale>
 using namespace std;
 
-char resp;
+char resp , mResp;
 
 int p_TOTAL ,p_Total_Hamb, p_Total_XB, p_Total_XP , p_Total_BTT_P, p_Total_BTT_M, p_Total_BTT_G, p_Total_CC_LT , p_Total_600, p_Total_1LT;
 int qtd, qtd_Hamb, qtd_XB, qtd_XP , qtd_BTT_P , qtd_BTT_M, qtd_BTT_G , qtd_CC_LT , qtd_CC_600 , qtd_CC_1LT;
@@ -62,8 +62,19 @@ int main(){
         p_TOTAL += p_Total_Hamb;
         cout << ("ADICIONADO :", qtd_Hamb , " HAMBURGUER(S)");
         cout << ("VALOR: R$ = ", p_Total_Hamb,"\n");
-        qtd = 0;
+        qtd = 0;cout << ("\n");
+        cout << ("\n");
         cout << ("TOTAL DO PEDIDO R$ = ", p_TOTAL ,"\n");
+        cout << ("\n");
+        cout <<("DESEJA ADICIONAR OUTRO ITEM? (S/N) \n");
+        cin >> mResp;
+        if (mResp == 'S')
+        {
+            menu();
+        }
+        else if(mResp == 'N'){
+
+        }
     }
     case 105:{
         cout <<("N° 105 - X-BURGER\n");
@@ -76,7 +87,18 @@ int main(){
         cout << ("ADICIONADO :", qtd_XB , "X-BURGUER(S)");
         cout << ("VALOR: R$ = ", p_Total_XB, "\n");
         qtd = 0;
+        cout << ("\n");
         cout <<( "TOTAL DO PEDIDO R$ = ",p_TOTAL , "\n");
+        cout << ("\n");
+        cout <<("DESEJA ADICIONAR OUTRO ITEM? (S/N) \n");
+        cin >> mResp;
+        if (mResp == 'S')
+        {
+            menu();
+        }
+        else if(mResp == 'N'){
+
+        }
     }
     case 110:{
         cout << ("N° 110 - X-PICANHA\n");
@@ -89,7 +111,18 @@ int main(){
         cout << ("ADICIONADO :" , qtd_XP , "X-PICANHA(S)\n"); 
         cout << ("VALOR: R$: = ", qtd_XP,"\n");
         qtd = 0;
+        cout << ("\n");
         cout << ("TOTAL DO PEDIDO R$ = ",p_TOTAL,"\n");
+        cout << ("\n");
+        cout <<("DESEJA ADICIONAR OUTRO ITEM? (S/N) \n");
+        cin >> mResp;
+        if (mResp == 'S')
+        {
+            menu();
+        }
+        else if(mResp == 'N'){
+
+        }
     }
     case 200:{
         cout <<("N° 200 - BATATA-FRITA PEQ\n");
@@ -103,7 +136,18 @@ int main(){
         cout <<  ("VALOR R$ = ", p_Total_BTT_P,"\n");
         cout << ("ADICIONADO: ", qtd_BTT_P , "BATATA-FRITA PEQ\n");
         qtd = 0;
+        cout << ("\n");
         cout << ("TOTAL DO PEDIDO R$ = ", p_TOTAL,"\n");
+        cout << ("\n");
+        cout <<("DESEJA ADICIONAR OUTRO ITEM? (S/N) \n");
+        cin >> mResp;
+        if (mResp == 'S')
+        {
+            menu();
+        }
+        else if(mResp == 'N'){
+
+        }
     }
     case 205:{
         cout <<("N° 205 - BATATA-FRITA MED\n");
@@ -115,7 +159,18 @@ int main(){
         p_TOTAL += p_Total_BTT_M;
         cout << ("ADICIONADO: ", qtd_BTT_M , "BATATA-FRITA MED\n");
         qtd = 0;
+        cout << ("\n");
         cout << ("TOTAL DO PEDIDO R$ = ", p_TOTAL, "\n");
+        cout << ("\n");
+        cout <<("DESEJA ADICIONAR OUTRO ITEM? (S/N) \n");
+        cin >> mResp;
+        if (mResp == 'S')
+        {
+            menu();
+        }
+        else if(mResp == 'N'){
+
+        }
     }
     case 210:{
         cout << ("N° 210 - BATATA-FRITA GRANDE \n");
@@ -127,7 +182,18 @@ int main(){
         p_TOTAL += p_Total_BTT_G;
         cout << ("ADICIONADO:", qtd_BTT_G," BATATA-FRITA GRANDE\n");
         qtd = 0;
+        cout << ("\n");
         cout << ("TOTAL DO PEDIDO R$ = ",p_TOTAL,"\n");
+        cout << ("\n");
+        cout <<("DESEJA ADICIONAR OUTRO ITEM? (S/N) \n");
+        cin >> mResp;
+        if (mResp == 'S')
+        {
+            menu();
+        }
+        else if(mResp == 'N'){
+
+        }
     }
     case 300:{
         cout << (" N° 300 - COCA-COLA LATA (350ML) \n");
@@ -139,7 +205,18 @@ int main(){
         p_TOTAL += p_Total_CC_LT;
         cout << ("ADICIONADO : ", qtd_CC_LT, " COCA-COLA LATA (350 ML) \n");
         qtd = 0;
+        cout << ("\n");
         cout << ("TOTAL DO PEDIDO R$: ", p_Total_CC_LT, "\n");
+        cout << ("\n");
+        cout <<("DESEJA ADICIONAR OUTRO ITEM? (S/N) \n");
+        cin >> mResp;
+        if (mResp == 'S')
+        {
+            menu();
+        }
+        else if(mResp == 'N'){
+
+        }
     }
     case 305:{
         cout <<(" N° 305 - COCA-COLA (600 ML) \n");
@@ -151,7 +228,18 @@ int main(){
         p_TOTAL += p_Total_600;
         cout << ("ADICIONADO : ", qtd_CC_600, " COCA-COLA (600ML)\n");
         qtd = 0;
+        cout << ("\n");
         cout << ("TOTAL DO PEDIDO R$: ", p_TOTAL, "\n");
+        cout << ("\n");
+        cout <<("DESEJA ADICIONAR OUTRO ITEM? (S/N) \n");
+        cin >> mResp;
+        if (mResp == 'S')
+        {
+            menu();
+        }
+        else if(mResp == 'N'){
+
+        }
     }
     case 310:{
         cout <<("N° 310 - COCA-COLA (1 LT) \n");
@@ -163,7 +251,18 @@ int main(){
         p_TOTAL += p_Total_1LT;
         cout << (" ADICIONADO : ", qtd_CC_1LT, "COCA-COLA (1LT) \n");
         qtd = 0;
+        cout << ("\n");
         cout << ("TOTAL DO PEDIDO R$: ", p_TOTAL, "\n");
+        cout << ("\n");
+        cout <<("DESEJA ADICIONAR OUTRO ITEM? (S/N) \n");
+        cin >> mResp;
+        if (mResp == 'S')
+        {
+            menu();
+        }
+        else if(mResp == 'N'){
+
+        }
     }
     default:
         qtd = 0;
