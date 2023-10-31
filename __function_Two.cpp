@@ -27,6 +27,64 @@ int menu(){
     return 1;
 }
 
+
+int nota(){
+    if (qtd_Hamb != 0){
+        cout << (" N° 100 - HAMBURGUER \n" );
+        cout << ("\n");
+        cout << ("QUANTIDADE: ", qtd_Hamb, "\n");
+        cout << ("\n");
+    }
+    if (qtd_XB != 0){
+        cout <<(" N° 105 - X-BURGUER \n");
+        cout <<("\n");
+        cout <<("QUANTIDADE: ", qtd_XB, "\n");
+        cout << ("\n");
+    }
+    if (qtd_XP !=0){
+        cout << (" N° 110 - X-PICANHA \n");
+        cout << ("\n");
+        cout <<("QUANTIDADE: ", qtd_XP, "\n");
+        cout << ("\n");
+    }
+    if (qtd_BTT_P !=0){
+        cout << (" N° 200 - BATATA-FRITA PEQ \n");
+        cout << ("\n");
+        cout <<( " QUANTIDADE: ", qtd_BTT_P, "\n");
+        cout << ("\n");
+    }
+    if (qtd_BTT_M !=0){
+        cout <<(" N° 205 - BATATA-FRITA MÉD \n");
+        cout << ("\n");
+        cout <<("QUANTIDADE:", qtd_BTT_M, "\n");
+        cout << ("\n");
+
+    }
+    if (qtd_BTT_G != 0){
+        cout <<(" N° 210 - BATATA-FRITA GRANDE \n");
+        cout << ("\n");
+        cout <<("QUANTIDADE : ", qtd_BTT_G);
+        cout << ("\n");
+    }
+    if (qtd_CC_LT != 0){
+        cout << (" N° 300 - COCA-COLA LT 350 ML \n");
+        cout << ("\n");
+        cout << ("QUANTIDADE : ", qtd_CC_LT, "\n");
+    }
+    if (qtd_CC_600 != 0){
+        cout << (" N° 305 - COCA-COLA 600 ML \n");
+        cout << ("\n");
+        cout << ("QUANTIDADE : ", qtd_CC_600, "\n");
+        cout << ("\n");
+    }
+    if (qtd_CC_1LT != 0){
+        cout << (" N° 310 - COCA-COLA 1 LT \n");
+        cout << ("\n");
+        cout <<("QUANTIDADE : ", qtd_CC_1LT, "\n");
+    }
+}
+
+
 int main(){
 
     setlocale(LC_ALL, "ptb");
@@ -73,7 +131,7 @@ int main(){
             menu();
         }
         else if(mResp == 'N'){
-
+            
         }
     }
     case 105:{
