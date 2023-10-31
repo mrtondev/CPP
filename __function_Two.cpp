@@ -80,6 +80,7 @@ int main(){
     }
     case 110:{
         cout << ("N° 110 - X-PICANHA\n");
+        cout <<("VALOR = R$ 12,00 \n");
         cout << ("QUANTIDADE: \n");
         cin >> qtd ;
         qtd_XP += qtd;
