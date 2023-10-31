@@ -74,7 +74,7 @@ int main(){
         p_Total_XB = valor_XB * qtd_XB;
         p_TOTAL += p_Total_XB;
         cout << ("ADICIONADO :", qtd_XB , "X-BURGUER(S)");
-        cout << ("Valor: R$ = ", p_Total_XB, "\n");
+        cout << ("VALOR: R$ = ", p_Total_XB, "\n");
         qtd = 0;
         cout <<( "TOTAL DO PEDIDO R$ = ",p_TOTAL , "\n");
     }
@@ -84,24 +84,86 @@ int main(){
         cout << ("QUANTIDADE: \n");
         cin >> qtd ;
         qtd_XP += qtd;
-        cout << ("ADICIONADO :" , qtd_XP , "X-PICANHA(S)"); 
+        p_Total_XP += valor_XP * qtd_XP;
+        p_TOTAL += p_Total_XP;
+        cout << ("ADICIONADO :" , qtd_XP , "X-PICANHA(S)\n"); 
+        cout << ("VALOR: R$: = ", qtd_XP,"\n");
+        qtd = 0;
+        cout << ("TOTAL DO PEDIDO R$ = ",p_TOTAL,"\n");
     }
     case 200:{
         cout <<("N° 200 - BATATA-FRITA PEQ\n");
+        cout << ("VALOR = R$: 5,00\n");
         cout << ("QUANTIDADE: \n");
         cin >> qtd;
         qtd_BTT_P += qtd;
-        
-        cout << ("ADICIONADO: ", qtd_BTT_P , "BATATA-FRITA PEQ");
+        p_Total_BTT_P += qtd_BTT_P * valor_BTT_P;
+        p_TOTAL += p_Total_BTT_P;
+        cout << ("ADICIONADO : ", qtd_BTT_P, "\n");
+        cout <<  ("VALOR R$ = ", p_Total_BTT_P,"\n");
+        cout << ("ADICIONADO: ", qtd_BTT_P , "BATATA-FRITA PEQ\n");
         qtd = 0;
+        cout << ("TOTAL DO PEDIDO R$ = ", p_TOTAL,"\n");
     }
     case 205:{
-        cout <<("N° 200 - BATATA-FRITA MED\n");
+        cout <<("N° 205 - BATATA-FRITA MED\n");
+        cout << ("VALOR = R$: 8,00\n");
         cout << ("QUANTIDADE: \n");
         cin >> qtd;
         qtd_BTT_M += qtd;
-        cout << ("ADICIONADO: ", qtd_BTT_M , "BATATA-FRITA MED");
+        p_Total_BTT_M += qtd_BTT_M * valor_BTT_M;
+        p_TOTAL += p_Total_BTT_M;
+        cout << ("ADICIONADO: ", qtd_BTT_M , "BATATA-FRITA MED\n");
         qtd = 0;
+        cout << ("TOTAL DO PEDIDO R$ = ", p_TOTAL, "\n");
+    }
+    case 210:{
+        cout << ("N° 210 - BATATA-FRITA GRANDE \n");
+        cout << ("VALOR = R$: 10,00\n");
+        cout << ("QUANTIDADE:\n");
+        cin >> qtd;
+        qtd_BTT_G += qtd;
+        p_Total_BTT_G += qtd_BTT_G * valor_BTT_G;
+        p_TOTAL += p_Total_BTT_G;
+        cout << ("ADICIONADO:", qtd_BTT_G," BATATA-FRITA GRANDE\n");
+        qtd = 0;
+        cout << ("TOTAL DO PEDIDO R$ = ",p_TOTAL,"\n");
+    }
+    case 300:{
+        cout << (" N° 300 - COCA-COLA LATA (350ML) \n");
+        cout << ("VALOR = R$: 4,00 \n");
+        cout << ("QUANTIDADE : \n");
+        cin >> qtd;
+        qtd_CC_LT += qtd;
+        p_Total_CC_LT += qtd_CC_LT * valor_CC_LT;
+        p_TOTAL += p_Total_CC_LT;
+        cout << ("ADICIONADO : ", qtd_CC_LT, " COCA-COLA LATA (350 ML) \n");
+        qtd = 0;
+        cout << ("TOTAL DO PEDIDO R$: ", p_Total_CC_LT, "\n");
+    }
+    case 305:{
+        cout <<(" N° 305 - COCA-COLA (600 ML) \n");
+        cout <<("VALOR R$ = 8,00 \n");
+        cout <<("QUANTDADE: \n");
+        cin >> qtd;
+        qtd_CC_600 += qtd;
+        p_Total_600 += qtd_CC_600 * Valor_CC_600;
+        p_TOTAL += p_Total_600;
+        cout << ("ADICIONADO : ", qtd_CC_600, " COCA-COLA (600ML)\n");
+        qtd = 0;
+        cout << ("TOTAL DO PEDIDO R$: ", p_TOTAL, "\n");
+    }
+    case 310:{
+        cout <<("N° 310 - COCA-COLA (1 LT) \n");
+        cout << ("VALOR = R$ 10,00 \n");
+        cout <<(" QUANTIDADE: \n");
+        cin >>  qtd;
+        qtd_CC_1LT += qtd;
+        p_Total_1LT += qtd_CC_1LT * valor_CC_1LT;
+        p_TOTAL += p_Total_1LT;
+        cout << (" ADICIONADO : ", qtd_CC_1LT, "COCA-COLA (1LT) \n");
+        qtd = 0;
+        cout << ("TOTAL DO PEDIDO R$: ", p_TOTAL, "\n");
     }
     default:
         qtd = 0;
