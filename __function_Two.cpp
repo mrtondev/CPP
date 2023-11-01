@@ -2,7 +2,8 @@
 #include <locale>
 using namespace std;
 
-char resp , mResp;
+char mResp;
+int resp;
 
 int p_TOTAL ,p_Total_Hamb, p_Total_XB, p_Total_XP , p_Total_BTT_P, p_Total_BTT_M, p_Total_BTT_G, p_Total_CC_LT , p_Total_600, p_Total_1LT;
 int qtd, qtd_Hamb, qtd_XB, qtd_XP , qtd_BTT_P , qtd_BTT_M, qtd_BTT_G , qtd_CC_LT , qtd_CC_600 , qtd_CC_1LT;
@@ -70,6 +71,7 @@ int nota(){
         cout << (" N° 300 - COCA-COLA LT 350 ML \n");
         cout << ("\n");
         cout << ("QUANTIDADE : ", qtd_CC_LT, "\n");
+         cout << ("\n");
     }
     if (qtd_CC_600 != 0){
         cout << (" N° 305 - COCA-COLA 600 ML \n");
@@ -81,8 +83,12 @@ int nota(){
         cout << (" N° 310 - COCA-COLA 1 LT \n");
         cout << ("\n");
         cout <<("QUANTIDADE : ", qtd_CC_1LT, "\n");
+         cout << ("\n");
     }
+    cout << (" TOTAL DO PEDIDO: R$ ", p_TOTAL, "\n");
+ return 0;
 }
+    
 
 
 int main(){
@@ -103,6 +109,7 @@ int main(){
 
     cin >> resp;
 
+
     switch (resp)
     {
     case 1:{
@@ -110,6 +117,16 @@ int main(){
     
         break;
     }
+
+    case 2:{
+        cout << (nota());
+    }
+
+    case 3:{
+        cout << ("FINALIZANDO PEDIDO... \n");
+        cout << (nota());
+    }
+
     case 100:{
         cout << ("N° 100 - HAMBURGUER \n");
         cout << ("VALOR = R$ 5,00");
@@ -131,7 +148,7 @@ int main(){
             menu();
         }
         else if(mResp == 'N'){
-            
+            break;
         }
     }
     case 105:{
@@ -155,7 +172,7 @@ int main(){
             menu();
         }
         else if(mResp == 'N'){
-
+            break;
         }
     }
     case 110:{
@@ -179,7 +196,7 @@ int main(){
             menu();
         }
         else if(mResp == 'N'){
-
+            break;
         }
     }
     case 200:{
@@ -204,7 +221,7 @@ int main(){
             menu();
         }
         else if(mResp == 'N'){
-
+            break;
         }
     }
     case 205:{
@@ -227,7 +244,7 @@ int main(){
             menu();
         }
         else if(mResp == 'N'){
-
+            break;
         }
     }
     case 210:{
@@ -250,7 +267,7 @@ int main(){
             menu();
         }
         else if(mResp == 'N'){
-
+            break;
         }
     }
     case 300:{
@@ -273,7 +290,7 @@ int main(){
             menu();
         }
         else if(mResp == 'N'){
-
+            break;
         }
     }
     case 305:{
@@ -296,7 +313,7 @@ int main(){
             menu();
         }
         else if(mResp == 'N'){
-
+            break;
         }
     }
     case 310:{
@@ -319,12 +336,17 @@ int main(){
             menu();
         }
         else if(mResp == 'N'){
-
+            break;
         }
     }
     default:
         qtd = 0;
+
+        cout << (menu());
+        cin >> resp;
+        if (resp == 3){
         break;
+        }
     }
 
     return 0;
