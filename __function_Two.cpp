@@ -5,7 +5,7 @@ using namespace std;
 char mResp;
 int resp;
 
-int p_TOTAL =0 ;
+int p_TOTAL =0;
 int p_Total_Hamb =0;
 int p_Total_XB =0;
 int p_Total_XP =0;
@@ -103,7 +103,7 @@ int nota(){
         cout <<"QUANTIDADE : "<< qtd_CC_1LT<< "\n";
          cout << "\n";
     }
-    cout << " TOTAL DO PEDIDO: R$ ", p_TOTAL, "\n";
+    cout << " TOTAL DO PEDIDO: R$ "<< p_TOTAL<< "\n";
     
  return 0;
 }
@@ -172,9 +172,13 @@ int main(){
         if (mResp == 'S' || mResp == 's')
         {
             menu();
+            break;
             
         }
         else if(mResp == 'N' || mResp == 'n'){
+            resp = 3;
+            nota();
+            break;
             
         }
         break;
@@ -199,9 +203,13 @@ int main(){
         if (mResp == 'S' || mResp == 's')
         {
             menu();
+            break;
             
         }
         else if(mResp == 'N' || mResp == 'n'){
+            resp = 3;
+            nota();
+            break;
             
         }
         break;
@@ -226,10 +234,13 @@ int main(){
        if (mResp == 'S' || mResp == 's')
         {
             menu();
+            break;
             
         }
         else if(mResp == 'N' || mResp == 'n'){
-            
+            resp = 3;
+            nota();
+            break;
         }
         break;
     }
@@ -254,10 +265,13 @@ int main(){
        if (mResp == 'S' || mResp == 's')
         {
             menu();
+            break;
             
         }
         else if(mResp == 'N' || mResp == 'n'){
-            
+            resp = 3;
+            nota();
+            break;
         }
         break;
     }
@@ -280,10 +294,13 @@ int main(){
         if (mResp == 'S' || mResp == 's')
         {
             menu();
+            break;
             
         }
         else if(mResp == 'N' || mResp == 'n'){
-            
+            resp = 3;
+            nota();
+            break;
         }
         break;
     }
@@ -306,10 +323,13 @@ int main(){
         if (mResp == 'S' || mResp == 's')
         {
             menu();
+            break;
             
         }
         else if(mResp == 'N' || mResp == 'n'){
-            
+            resp = 3;
+            nota();
+            break;
         }
         break;
     }
@@ -332,10 +352,13 @@ int main(){
         if (mResp == 'S' || mResp == 's')
         {
             menu();
+            break;
             
         }
         else if(mResp == 'N' || mResp == 'n'){
-            
+            resp = 3;
+            nota();
+            break;
         }
         break;
     }
@@ -358,10 +381,13 @@ int main(){
         if (mResp == 'S' || mResp == 's')
         {
             menu();
+            break;
             
         }
         else if(mResp == 'N' || mResp == 'n'){
-            
+            resp = 3;
+            nota();
+            break;
         }
         break;
     }
@@ -384,10 +410,13 @@ int main(){
        if (mResp == 'S' || mResp == 's')
         {
             menu();
+            break;
             
         }
         else if(mResp == 'N' || mResp == 'n'){
-            
+            resp = 3;
+            nota();
+            break;
         }
         break;
     }
@@ -397,7 +426,8 @@ int main(){
         menu();
         cin >> resp;
         if (resp == 3){
-        
+            nota();
+            break;
         }
         break;
     }
