@@ -48,6 +48,9 @@ int menu(){
 
 
 int nota(){
+
+    cout << "TOTAL DE PEDIDOS \n"; 
+
     if (qtd_Hamb != 0){
         cout << " N° 100 - HAMBURGUER \n" ;
         cout << "\n";
@@ -120,9 +123,9 @@ int main(){
     cout << "\n";
     cout << " ______________________________________________________\n";
     cout << "|                                                     |\n";
-    cout << "|     1 - Menu             2 - Escolher item          |\n";
+    cout << "|     1 - Menu             3 - Finalizar Pedido       |\n";
     cout << "|                                                     |\n";
-    cout << "|     2 - Ver carrinho     3 - Finalizar Pedido       |\n";
+    cout << "|     2 - Ver carrinho                                |\n";
     cout << "|_____________________________________________________|\n";
     cout << "\n";
 
@@ -130,6 +133,7 @@ int main(){
  do{  
 
     cin >> resp;
+    
 
 
 
@@ -223,7 +227,7 @@ int main(){
         p_Total_XP += valor_XP * qtd_XP;
         p_TOTAL += p_Total_XP;
         cout << "ADICIONADO :" << qtd_XP << "X-PICANHA(S)\n"; 
-        cout << "VALOR: R$: = "<< qtd_XP<<"\n";
+        cout << "VALOR: R$: = "<< p_TOTAL<<"\n";
         qtd = 0;
         cout << "\n";
         cout << "TOTAL DO PEDIDO R$ = \n"<<p_TOTAL;
